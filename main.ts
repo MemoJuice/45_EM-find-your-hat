@@ -19,19 +19,23 @@ let board: Board = [
 	[EMPTY, HAT, EMPTY],
 ];
 
-//  Game state 
+//  Game state
 let playerRow: number = 0;
 let playerCol: number = 0;
 let playing: boolean = true;
+
 
 // Print board
 function printBoard(board: Board): void {
 	console.clear();
 	console.log(board);
+	const myboard = board.map((row) => row.join)
+	console.log(myboard)
 }
 
-// Game play loop
+// // Game play loop
 printBoard(board);
-const input:string = prompt("Which way? (w/a/s/d): ");
-console.log(input);
+// const input:string = prompt("Which way? (w/a/s/d): ");
+// console.log(input);
 
+// if (input === "s") playerRow++;
